@@ -1,0 +1,12 @@
+pocketbase
+pocketbase.exe
+pocketbase_*.zip
+ngrok
+ngrok.exe
+ngrok-v3-*.tgz
+ngrok-v3-*.zip
+pb_data/
+migration-cachyos/
+.env.seed
+.env.seed.example
+*.bat
