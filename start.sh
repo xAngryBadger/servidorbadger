@@ -4,7 +4,7 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$DIR"
 
 echo "========================================"
-echo " Inventario Florestal Pro - Servidor"
+echo " Urutau - Servidor"
 echo "========================================"
 
 # Kill existing
@@ -13,7 +13,7 @@ pkill -f "ngrok http 8090" 2>/dev/null || true
 sleep 1
 
 echo "[+] Iniciando PocketBase..."
-./pocketbase serve &>/tmp/pb.log &
+./pocketbase serve --http=0.0.0.0:8090 &>/tmp/pb.log &
 sleep 3
 
 echo "[+] Iniciando ngrok..."
@@ -39,7 +39,7 @@ if [ -n "$NGROK_URL" ]; then
   echo ""
   echo "  Links para enviar:"
   echo "  -----------------------------"
-  echo "  Admin (colega):  $NGROK_URL/inventario-florestal-admin/"
+  echo "  Admin (colega):  $NGROK_URL/urutau-admin/"
   echo "  PB Admin:        $NGROK_URL/_/"
   echo "  App (campo):     $NGROK_URL"
   echo "  Landing page:    $NGROK_URL/"

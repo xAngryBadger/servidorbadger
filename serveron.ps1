@@ -1,5 +1,5 @@
 Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "Inventario Florestal Pro - Servidor" -ForegroundColor Cyan
+Write-Host "Urutau - Servidor" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 
 $servidorDir = "E:\servidorbadger"
@@ -69,7 +69,7 @@ if ($ngrokUrl) {
     Write-Host ""
     Write-Host "  Links para enviar:" -ForegroundColor White
     Write-Host "  -----------------------------" -ForegroundColor DarkGray
-    Write-Host "  Admin (colega):  $ngrokUrl/inventario-florestal-admin/" -ForegroundColor Cyan
+    Write-Host "  Admin (colega):  $ngrokUrl/urutau-admin/" -ForegroundColor Cyan
     Write-Host "  PB Admin:        $ngrokUrl/_/" -ForegroundColor DarkGray
     Write-Host "  App (campo):     $ngrokUrl" -ForegroundColor Cyan
     Write-Host "  Landing page:    $ngrokUrl/" -ForegroundColor DarkGray
