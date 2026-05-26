@@ -3,9 +3,10 @@ import json
 import re
 import random
 import string
+import os
 from datetime import datetime
 
-DB_PATH = '/mnt/hdold/gazella_NEW/servidorbadger/pb_data/data.db'
+DB_PATH = os.environ.get("DB_PATH", "pb_data/data.db")
 
 def generate_id():
     return ''.join(random.choices(string.ascii_lowercase + string.digits, k=15))

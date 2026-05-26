@@ -2,8 +2,8 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "Extraindo e Iniciando Servidor" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 
-$servidorDir = "E:\servidorbadger"
-$ngrokDir = "E:\ngrok"
+$servidorDir = $PSScriptRoot
+$ngrokDir = Join-Path $PSScriptRoot "ngrok"
 
 if (-not (Test-Path $ngrokDir)) { mkdir $ngrokDir }
 
@@ -49,4 +49,4 @@ Write-Host ""
 Write-Host "========================================" -ForegroundColor Green
 Write-Host "OK: Servidor iniciado!" -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Green
-Write-Host "URL publica: https://unspouted-omar-unapplicably.ngrok-free.dev" -ForegroundColor Yellow
+Write-Host "URL publica: (verifique http://127.0.0.1:4040)" -ForegroundColor Yellow

@@ -2,8 +2,8 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "Urutau - Servidor" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 
-$servidorDir = "E:\servidorbadger"
-$ngrokDir = "E:\ngrok"
+$servidorDir = $PSScriptRoot
+$ngrokDir = Join-Path $PSScriptRoot "ngrok"
 
 if (-not (Test-Path $ngrokDir)) { mkdir $ngrokDir }
 
